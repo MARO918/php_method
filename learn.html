@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>PHP 関数学習アプリ</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container py-4">
+
+    <h1 class="text-center mb-4">PHP 関数学習アプリ</h1>
+  
+    <!-- 関数一覧 -->
+    <div class="row g-2" id="buttons"></div>
+  
+    <!-- 説明表示 -->
+    <div class="mt-4">
+      <h4>説明</h4>
+      <div id="output">関数ボタンをクリックしてください。</div>
+    </div>
+  
+    <!-- 追加エリア -->
+    <div class="mt-5">
+      <h4>関数を追加する</h4>
+      <div class="row g-2">
+        <div class="col-md-4">
+          <input type="text" id="newName" class="form-control" placeholder="関数名">
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="newDesc" class="form-control" placeholder="説明">
+        </div>
+        <div class="col-md-2 d-grid">
+          <button id="addBtn" class="btn btn-primary">追加登録</button>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+<div id="buttons"></div>
+
+<div id="output">ここに説明が表示されます。</div>
+
+<!-- 関数追加エリア -->
+<div id="addArea">
+  <h2>関数を追加する</h2>
+  <input type="text" id="newName" placeholder="関数名">
+  <input type="text" id="newDesc" placeholder="説明">
+  <button id="addBtn">追加登録</button>
+</div>
+
+
+</body>
+</html>
